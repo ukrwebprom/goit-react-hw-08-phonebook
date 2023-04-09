@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getCurrentUser } from 'redux/operations';
@@ -8,8 +8,6 @@ import { Register } from 'pages/Register';
 import { Login } from 'pages/Login';
 import { Contacts } from 'pages/Contacts';
 import { Layout } from './Layout/Layout';
-import { getIsLogged } from 'redux/selectors';
-import { useSelector } from 'react-redux';
 import { PrivateRoute, PublicRoute } from './PrivatePublicRoute';
 
 import './App.scss';
@@ -20,8 +18,6 @@ export function App() {
   useEffect(() => {
     dispatch(getCurrentUser());
   }, [dispatch])
-
-  const isLogged = useSelector(getIsLogged);
 
   return (
     <Routes>

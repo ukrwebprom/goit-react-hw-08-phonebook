@@ -1,0 +1,10 @@
+.task-description h1 {
+  margin-bottom: 20px;
+}
+.task-description h2 {
+  font-weight: 800;
+}
+.task-description p, .task-description h2 {
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}/*# sourceMappingURL=dummy.css.map */

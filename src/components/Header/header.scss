@@ -1,0 +1,48 @@
+.header {
+    background-color:mediumslateblue;
+    height:300px;
+    width: 100%;
+    padding:20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index:10;
+    align-items: flex-start;
+    &.sticky {
+        position: fixed;
+        top:0px;
+        height:50px;
+        padding:5px 15px 5px 15px;
+        align-items: center;
+    }
+    & a {
+        text-decoration: none;
+    }
+}
+
+.maintitle {
+    font-family: 'Playfair Display', serif;
+    padding:0;
+    margin:0;
+    color:white;
+    font-size: 45px;
+    font-weight: 400;
+    @media screen and (min-width:480px) {
+        font-size: 70px;
+    }
+    &.sticky {
+        font-size: 35px;
+    }
+}
+.subtitle {
+    color:white;
+    font-size: 13px;
+    @media screen and (min-width:450px) {
+        font-size: 16px;
+    }
+}
+
+.sticky + .content {
+    padding-top: 302px;
+  }

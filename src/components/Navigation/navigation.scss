@@ -1,0 +1,33 @@
+.nav {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    gap:20px;
+    color:white;
+    padding:0;
+    align-items: flex-end;
+
+    @media screen and (min-width:480px) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    & a {
+        color:white;
+        text-decoration: none;
+    }
+
+}
+.mobile-menu {
+    background-color: transparent;
+    border:0;
+    color:white;
+    cursor:pointer;
+}
+.menu-dropdown {
+    position:absolute;
+    top:60px;
+    right:20px;
+    background-color: darkorchid;
+    padding:20px;
+}

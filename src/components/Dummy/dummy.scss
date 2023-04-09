@@ -1,0 +1,12 @@
+.task-description {
+    & h1 {
+        margin-bottom:20px;
+    }
+    & h2 {
+        font-weight:800;
+    }
+    & p, h2 {
+        margin-bottom:15px;
+        line-height: 1.3em;
+    }
+}

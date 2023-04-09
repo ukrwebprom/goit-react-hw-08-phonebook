@@ -1,0 +1,14 @@
+.usermenu {
+    display:flex;
+    gap:10px;
+    align-items: center;
+
+    & p {
+        font-size: 13px;
+    }
+
+    & button {
+        height:35px;
+        font-family: inherit;
+    }
+}

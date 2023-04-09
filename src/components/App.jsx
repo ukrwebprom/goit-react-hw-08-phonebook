@@ -9,7 +9,6 @@ import { Login } from 'pages/Login';
 import { Contacts } from 'pages/Contacts';
 import { Layout } from './Layout/Layout';
 import { PrivateRoute, PublicRoute } from './PrivatePublicRoute';
-
 import './App.scss';
 
 export function App() {

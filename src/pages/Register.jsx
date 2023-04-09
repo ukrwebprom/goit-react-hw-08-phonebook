@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/operations';
 import { getAuthError } from 'redux/selectors';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 export const Register = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ export const Register = () => {
           <p>
             {' '}
             If you already have an account with us, please{' '}
-            <a href="/login">log in</a> instead.
+            <Link to="/login">log in</Link> instead.
           </p>
           {isError && <p className="auth-error">Something went wrong!</p>}
         </div>

@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { login } from 'redux/operations';
 import { getAuthError } from 'redux/selectors';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ export const Login = () => {
           <p>
             Welcome to our login page! Please enter your email and password to
             access your account. If you don't have an account yet, you can sign
-            up for free by clicking the <a href="/register">Sign up</a> button
+            up for free by clicking the <Link to="/register">Sign up</Link> button
           </p>
           {isError && <p className="auth-error">Wrong authorization data!</p>}
         </div>
